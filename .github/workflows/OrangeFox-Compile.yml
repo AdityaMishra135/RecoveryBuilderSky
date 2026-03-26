@@ -122,7 +122,7 @@ jobs:
         [[ "${DEVICE_TREE_URL}" == *.git ]] && DEVICE_TREE_URL="${DEVICE_TREE_URL%.git}"
         echo "DEVICE_TREE_URL=${DEVICE_TREE_URL}" >> $GITHUB_ENV
 
-    - - name: Upload to Release
+    - name: Upload to Release
       uses: softprops/action-gh-release@v2
       with:
         files: |
